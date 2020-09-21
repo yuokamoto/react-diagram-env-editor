@@ -1,25 +1,51 @@
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "lib": [
+//       "dom",
+//       "dom.iterable",
+//       "esnext"
+//     ],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "react"
+//   },
+//   "include": [
+//     "src"
+//   ]
+// }
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
+	"compileOnSave": false,
+	"compilerOptions": {
+		"suppressExcessPropertyErrors": true,
+		"declaration": false,
+		"strictNullChecks": false,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"jsx": "react",
+		"target": "ES6",
+		"module": "commonjs",
+    "strict": false,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
-  },
-  "include": [
-    "src"
-  ]
+		"lib": [
+			"DOM",
+			"ES6"
+		]
+	},
+	"include": [
+		"./src"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts",
+		"./dist"
+	]
 }
